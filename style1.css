@@ -1,0 +1,167 @@
+﻿body{
+	box-sizing: border-box;
+	margin: 0;
+	font-size: 14pt;
+    font-family: sans-serif;
+	/*background-image: url("bg.png");
+	background-repeat:repeat; */
+}
+
+header nav ul {
+	list-style: none;
+	background-color: #4f4f4f;
+    margin: 0;
+    text-align:center;
+	font-size: 18pt;
+    /* background-image: url("imgs/BlockHeader.png"); */
+    background: #754f44;
+	width: 100%;
+	/*position: fixed;*/
+	height: 50px;
+}
+
+header > nav ul li > a:hover{
+    color: #fff58e;
+}
+
+header > nav ul li > a
+{
+text-decoration: none;
+	color: #ffffff;
+	font-size: 16pt;
+}
+
+header > nav ul li{
+	display: inline-block;
+	margin-left: 10px;
+	padding: 10px;
+	
+}
+
+footer>div{
+	padding: 10px;
+	background-color: #4f4f4f;
+	color: lightcoral;
+	font-size: 18pt;
+	text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+   
+    
+}
+
+
+main .grid1{
+    display: grid;
+    grid-template-columns: 6fr 2fr 2fr;
+    grid-column-gap: 15px;
+    width: 100%;
+    height: 500px;
+    /* background: lightblue; */
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+main .grid1 > div {
+    width: auto;
+    height: auto;
+    /* background: lightpink; */
+    border: 1px solid grey;
+}
+
+.grid1 div:first-child{
+    border-radius: 6px;
+    padding: 30px;
+    font-size: 18px;
+}
+
+
+
+
+ .highlight{
+    text-align: center;
+    background:#ddc373;
+    height: 45px;
+    color: white;
+    margin: 5px;
+    border-radius: 2px solid black;
+}
+
+.grid1-3 .text{
+    padding: 10px 10px 0 10px;
+    font-size: 17px;
+}
+
+.highlight h5{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+.grid1-2 .form1,.form2{
+    margin-top: 10px;
+    padding: 5px;   
+    border-bottom: 1px solid lightgrey;
+    height: 140px;
+}
+
+.form1 input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.form2 input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.grid1-2 > a{
+    padding: 20px 50px;
+    /* margin-top: 30px; */
+    display: block;
+}
+
+   <!-- for about.html-->
+
+.grid-about{
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid darkblue;
+    font-size: 18px;
+}
+
+.subbtn{
+    margin-left: 10px;
+    text-align: center;
+
+}
+
+.myphoto{
+    display: inline-block;
+    margin-left: 10px;
+}
+.contact{
+    /* background: red; */
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    top: 40px;
+}
+
+.contact h5{
+    font-size: 25px;
+    animation: hs 2s ease-in-out 0s;
+}
+
+
+@keyframes hs{
+    0%{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
